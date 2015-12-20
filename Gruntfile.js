@@ -30,6 +30,25 @@ module.exports = function (grunt) {
     // Project settings
     config: config,
 
+    concat: {
+      mobileLess: {
+        src: ['<%= config.app %>/styles/less/*.less'],
+        dest: '<%= config.app %>/styles/index.less'
+      }
+    },
+
+    less: {
+      development: {
+        options: {
+          compress: false,
+          yuicompress: false
+        },
+        files: {
+          '<%= config.app %>/styles/index.css': '<%= config.app %>/styles/index.less'
+        }
+      }
+    },  
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
@@ -50,6 +69,16 @@ module.exports = function (grunt) {
       styles: {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'postcss']
+      },
+      less: {
+        files: [
+          '<%= config.app %>/styles/*.less',
+          '<%= config.app %>/styles/**/*.less'
+        ],
+        tasks: ['concat:mobileLess','less','newer:copy:styles', 'postcss'],
+        options: {
+          nospawn: true
+        }
       }
     },
 
@@ -363,7 +392,9 @@ module.exports = function (grunt) {
       ]
     }
   });
+  
 
+  grunt.loadNpmTasks('grunt-contrib-less');
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
 

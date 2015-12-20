@@ -33,7 +33,7 @@ module.exports = function (grunt) {
     concat: {
       mobileLess: {
         src: ['<%= config.app %>/styles/less/*.less'],
-        dest: '<%= config.app %>/styles/index.less'
+        dest: '<%= config.app %>/styles/main.less'
       }
     },
 
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
           yuicompress: false
         },
         files: {
-          '<%= config.app %>/styles/index.css': '<%= config.app %>/styles/index.less'
+          '<%= config.app %>/styles/main.css': '<%= config.app %>/styles/main.less'
         }
       }
     },  

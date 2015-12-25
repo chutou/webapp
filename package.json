@@ -54,5 +54,8 @@
         2
       ]
     }
+  },
+  "dependencies": {
+    "jquery-placeholder": "^2.1.1"
   }
 }

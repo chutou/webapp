@@ -1,0 +1,125 @@
+/**
+* 代理商平台登录界面
+**/
+
+.dlspt {
+    background: url(../images/dlsptBg.jpg) no-repeat center 30px;
+    .header {
+        background-color: rgba(0, 0, 0, 1);
+        .head {
+            height: 30px;
+        }
+    }
+    .ptContent {
+        position: relative;
+        .xtLogin {
+            width: 250px;
+            padding: 30px;
+            background: url(../images/blackBg.png) repeat 0 0;
+            position: absolute;
+            top: 140px;
+            right: 50px;
+            h1 {
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                font-weight: normal;
+            }
+            .label {
+                margin: 10px 0 0 0;
+                position: relative;
+                border: none;
+                height: 40px;
+                line-height: 40px;
+                background: transparent;
+                .label-user {
+                    background: #c3c3c3 url(../images/icon.png) no-repeat 7px -284px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 46px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+                .label-pwd {
+                    background: #c3c3c3 url(../images/icon.png) no-repeat 7px -318px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 46px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+                .text {
+                    width: 100%;
+                    border: 1px solid #d9d9d9;
+                    line-height: 38px;
+                    height: 38px;
+                    text-indent: 55px;
+                    *text-indent: 0;
+                    background-color: #fff;
+                    &:focus {
+                        color: #333;
+                    }
+                }
+                .text-small {
+                    width: 140px;
+                    border: none;
+                    line-height: 40px;
+                    height: 40px;
+                    text-indent:10px;
+                    *text-indent: 0;
+                    &:focus {
+                        color: #333;
+                    }
+                }
+                .code{
+                	position: absolute;
+                	top: 0;
+                	right: 0;
+                	img{
+                		width: auto;
+                	}
+                }
+            }
+            .blueBtn {
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                background-color: #00aaee;
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+            .forget{
+            	margin:10px 0 20px 0;
+            	a{
+            		color: #fff;
+            	}
+            }
+        }
+    }
+    .footer {
+        background: transparent;
+        position: fixed;
+        bottom: 50px;
+        .foot {
+            .foot-ul {
+                a {
+                    color: #000;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            .copyright {
+                font-size: 12px;
+                color: #000;
+                padding: 5px 0 10px;
+            }
+        }
+    }
+}

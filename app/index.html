@@ -71,12 +71,11 @@
     </div>
     <!-- 滚动栏 -->
     <div class="scroll">
-        <div id="marquee">
-            <ul>
-            <li>[通知] 商家点击"发布信息"即可发布广告！</li>
-            <li>[通知] 商家点击"发布信息"即可发布广告！</li>
-            </ul>
-            </div>
+        <marquee scrollamount="4" direction="left" style="white-space: nowrap;">
+
+            【通知】商家点击“我要发广告”即可发布红包！
+        </marquee>
+
     </div>
     <ul class="filter">
         <li class="firstMenu subMenu">
@@ -295,10 +294,29 @@
             </div>
         </li>
     </ul>
-    <!--底部-->
-    <div class="footer">
-
+    <div class="opa"></div>
+    <div class="fix_bottom">
+        <ul>
+            <li class="first">发布话题</li>
+            <li><a href="##">普通模式</a></li>
+            <li><a href="##">组团模式</a></li>
+            <li><a href="##">免费模式</a></li>
+            <li><a href="##">任务模式</a></li>
+            <li><a href="##">语音红包模式</a></li>
+            <li><a href="##">口令模式</a></li>
+            <li><a href="##">卡券模式</a></li>
+            <li><a class="cancel" href="##">取消</a></li>
+        </ul>
     </div>
+    <!--底部-->
+    <footer class="footer">
+        <ul>
+            <li><a href="##"><p class="icon1"></p><p>抢钱</p></a></li>
+            <li id="fabu"><a class="active" href="##"><p class="icon2"></p><p>发布信息</p></a></li>
+            <li><a href="##"><p class="icon3"></p><p>排行榜</p></a></li>
+            <li><a href="##"><p class="icon4"></p><p>我的</p></a></li>
+        </ul>
+    </footer>
 </div>
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
@@ -335,6 +353,15 @@
             $(this).hide();
             console.log("111111111111")
         });
+        $("#fabu").click(function() {
+            $(".opa").show();
+            $(".fix_bottom").show();
+        });
+        $(".cancel").click(function() {
+            event.stopPropagation();
+            $(".opa").hide();
+            $(".fix_bottom").hide();
+        })
 
 
 

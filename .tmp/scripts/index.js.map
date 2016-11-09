@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../app/scripts/index.js"],"names":[],"mappings":";;AAAA,OAAO,CAAC,GAAG,CAAC,gBAAgB,CAAC,CAAC;AAC9B,CAAC,CAAC,SAAS,CAAC,CAAC,KAAK,CAAC,UAAS,KAAK,EAAE;;;CAGlC,CAAC,CAAC","file":"index.js","sourcesContent":["console.log('\\'Allo \\'Allo!'); // eslint-disable-line no-console\n$('#header').click(function(event) {\n\t/* Act on the event */\n\t\n});"]}

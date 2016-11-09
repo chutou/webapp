@@ -809,12 +809,121 @@ body a:hover {
 }
 .footer {
   width: 100%;
-  padding: 20px 0 0 0;
-  background-color: #2a2a2d;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  background: #fff;
+}
+.footer ul li {
+  float: left;
+  width: 25%;
+}
+.footer ul li a {
+  display: block;
+  text-align: center;
+}
+.footer ul li a .icon1 {
+  height: 30px;
+  background: url(../images/m_index.png) no-repeat center 2px;
+  background-size: 28px 28px;
+}
+.footer ul li a .icon2 {
+  height: 30px;
+  background: url(../images/m_add.png) no-repeat center 2px;
+  background-size: 28px 28px;
+}
+.footer ul li a .icon3 {
+  height: 30px;
+  background: url(../images/m_rank.png) no-repeat center 2px;
+  background-size: 28px 28px;
+}
+.footer ul li a .icon4 {
+  height: 30px;
+  background: url(../images/m_mine.png) no-repeat center 2px;
+  background-size: 28px 28px;
+}
+.footer ul li a:hover,
+.footer ul li a:active,
+.footer ul li a.active {
+  color: #ff5454;
+}
+.footer ul li a:hover .icon1,
+.footer ul li a:active .icon1,
+.footer ul li a.active .icon1 {
+  height: 30px;
+  background: url(../images/m_index_ac.png) no-repeat center 2px;
+  background-size: 28px 28px;
+}
+.footer ul li a:hover .icon2,
+.footer ul li a:active .icon2,
+.footer ul li a.active .icon2 {
+  height: 30px;
+  background: url(../images/m_add.png) no-repeat center 2px;
+  background-size: 28px 28px;
+}
+.footer ul li a:hover .icon3,
+.footer ul li a:active .icon3,
+.footer ul li a.active .icon3 {
+  height: 30px;
+  background: url(../images/m_rank_ac.png) no-repeat center 2px;
+  background-size: 28px 28px;
+}
+.footer ul li a:hover .icon4,
+.footer ul li a:active .icon4,
+.footer ul li a.active .icon4 {
+  height: 30px;
+  background: url(../images/m_mine_ac.png) no-repeat center 2px;
+  background-size: 28px 28px;
+}
+.footer ul li:nth-child(2) a.active {
+  background-color: #ff5454 !important;
+  color: #fff !important;
 }
 .main {
   width: 1150px;
   margin: 0 auto;
+}
+.opa {
+  background: #000;
+  opacity: .6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.fix_bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: #f5f6f7;
+  display: none;
+}
+.fix_bottom ul li.first {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 18px;
+}
+.fix_bottom ul li a {
+  display: block;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 300;
+  height: 60px;
+  line-height: 60px;
+  color: #17B;
+  border-bottom: 1px solid #e6e6e6;
+}
+.fix_bottom ul li a.cancel {
+  color: #E54;
+}
+body {
+  padding-bottom: 50px;
 }
 .indexBanner .flashBanner {
   position: relative;
